@@ -1,0 +1,51 @@
+
+Repozitory açmak 
+mesela "recipe" dosyası var ve içinde 3 adet text dosyası var. Rep. açmak için 
+
+duman recipe $ ls -a
+.  ..  cake.text  pasta.text  tart.text (git sodyası yanı Rep. açılmamış)
+
+git init komutu ile açabilirsin
+duman recipe $ git init
+Initialized empty Git repository in /home/duman/Desktop/recipe/.git/
+duman (master #) recipe $ ls -a
+.  ..  cake.text  .git  pasta.text  tart.text
+
+***git status komutu ile
+List which files are staged, unstaged, and untracked.
+----------------
+
+What happens when you initialize a repository? Why do you need to do it?
+
+How is the staging area different from the working directory and the repository?
+What value do you think it offers?
+
+How can you use the staging area to make sure you have one commit per logical
+change?
+
+What are some situations when branches would be helpful in keeping your history
+organized? How would branches help?
+
+How do the diagrams help you visualize the branch structure?
+
+What is the result of merging two branches together? Why do we represent it in
+the diagram the way we do?
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges
+manually?
+
+------
+Staging Area
+How is the staging area different from the working directory and the repository? What value do you think it offers?
+
+**git add something.exe komutu stage area ya dosya ekleyebilirsin
+stage area ya gelen dosyaları commit edebilirsin
+
+commit mesajı yazmak için 
+**git commit mesajı kullanılıyor
+
+
+
+
+
+
