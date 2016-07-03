@@ -79,6 +79,21 @@ programı 3 ayrı kategorodi dallandarılabilirsin -
 -  master
 -----------
 What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+------
+
+the visual representation of the commit history is 
+***"git log --graph --oneline master coins easy-mode" (üç şubeyinin commitlerini gösteren grafik)
+-------
+git checkout hd938ydh37y(commit no) detached head yaptıktan sonra . Buradan yeni bir branch açıp ilerlemek isternirse 
+
+"git checkout -b new_branch_name" bu kod aşağıdaki iki kodun toplamına eşittir.**Short cut
+
+
+**git branch new_branch_name
+**git checkout new_branch_name
+
+--------
+How do the diagrams help you visualize the branch structure?
 
 
 
