@@ -1,0 +1,64 @@
+Diff command( helps you to compare old and new version files and show the lines which has differency )
+
+cd  home/duman/desktop/Github/
+
+Github $diff old.java 
+--------
+cd /home/duman/Desktop/Github/version-control /reflections
+"git log "bu kod ile hangi zamanlarda program üzerinde ne değişikliği yapıldığını bize . Aşağıfaki3 özellikle gösterir."q" tuşu ile çıkış yapabilirsin
+-Commit no---örnek : 7342987487ydg83edhughghad383uure3uıu
+-Authur 
+-date 
+  Her değişim farklı bir commit nosu vardır. Date kısmının en altında ne değiştirildiği belirtilir
+
+"git diff" komutu ile commitler bir biri le karşılaştırılabilinir
+
+git diff commit1 commit2
+
+bu komuttan sonra gözüken 
+
+-(eksi işareti ) kod çıkartılmış-Kırmızı renk yazı
++(artı işareti) yeni kod eklenmiş-Yeşil renk yazı
+siyah renkte kalan yazılar değişmemiş demektir.
+
+
+***Commit ne zaman yapılır 
+
+Tek typo yapmak - çok küçük kalır
+3 typo düzeltip cpmmit yapmak yerinde bir davranı.
+1 bug düzeltip -Commit yapmak -Yerinde davranış
+2 bug -fazla olur
+1 hafta bekleyip commit yapmak fazla
+1 saatlik bir düzeltme yerine göre değişebilir bazen tam kararı bazense çok olabilir
+
+Soru
+ What do you think are the pros and cons of manually choosing when to create a commit, like you do in Git, vs having versions automatically saved, like Google Docs does?
+ Kodlamada commit yapmak senin kararında olması gerek . otomatik save bilinçsizce olabilir. Neyi nezaman nerede yaptığını ve relate olan düzeltmeleri fark etmeyebilirsin
+--------
+
+Çoklu dosyalı programlarda mesela java. Commitle bir ad değişimi yapıldığında . her dosyada bu değişim kaydedilir.
+
+Yapılan değişim hangi dosyaları değiştirdiğini istatiksel oalrak aşağıdaki komuttan öğrenebiliriz.
+
+git log ---stat
+
+**Soru
+Why do you think some version control systems, like Git, allow saving multiple files in one commit, while others, like Google Docs, treat each file separately?
+-------
+"git clone https://github.com/udacity/asteroids.git"
+ bu komut dosya grubunu ve bütün commit geçmişini başka bir bilgisayardan diğer bilgisayara kopayalamaya yarar. it creats a clone clone of the repository
+
+***Getting Colored Output
+To get colored diff output, run git config --global color.ui auto
+
+"Git log" ile bir soya açılır 
+"Gİt diff commit1 commit2" karşılaştırılır
+
+---------
+"git checkout"
+restoring the previous commit temporarly- Hangi commit hata olduğunu bulmak için yapılıyor.
+
+Eski commitlerden denemeye başlayı hatanın hangi committe olduğunu bu komutla bulabilirsin. En yeni komite dönmek için ID sinibir kenara not et . aynı komit ve en yeni ID commit ile en yeni haline dönebilir program
+
+
+
