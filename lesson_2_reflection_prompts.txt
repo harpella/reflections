@@ -77,6 +77,10 @@ programı 3 ayrı kategorodi dallandarılabilirsin -
 -duman (easy-mode) asteroids $ git branch
 -* easy-mode (yıldız easy mode olunca değişimler bu bölümde olacak)
 -  master
+-----------
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+
+
 
 
 
