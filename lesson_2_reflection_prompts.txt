@@ -43,6 +43,71 @@ stage area ya gelen dosyaları commit edebilirsin
 
 commit mesajı yazmak için 
 **git commit mesajı kullanılıyor
+-----
+bir program dosyasısını modfiye ettikten sonra stage etmemiz gerek tekrar dan
+-------
+** git diff (parametre olmadan) bu komut daha comit edilmemiş fakata çalışma alanıya repozotory arasındaki farkları gösterir. mesela 2 farklı dosyada değişiklik yaptık fakat " git add" yapmadık. Bu durumda değişiklik sadece çalışma alnında kalmış oluyor . Değişmemiş durum ise repozotory de. Böylelikle bu komutla durumları karşılaştırabiliyorsun 
+
+----------
+Staging area
+game.js yeniden değiştirlmiş ve git add ile eklenmiş fakat commit edilmemiş ve commit edilmmiş eski game.js ile fark yani ; Staging area ve REpozorty arasında farkı 
+**** "git diff --staged" ile bulabilirsin
+
+----
+git add olmamış çalışma alnında değiştirilmiş dosyaları eski haline gelmesi için 
+*** "git reset --hard" komutunu kullanabilirsin. Bunu kullanırken deikkatli olunmalı geri dönüşü yok
+
+How can you use the staging area to make sure you have one commit per logical change?
+------
+
+Bracnhes =Dal şube
+
+programı 3 ayrı kategorodi dallandarılabilirsin -
+
+** "git branch" = master mode (değişimleri easy mode ile yapılacak )
+
+   "git branch easy-mode" easy mode
+-* master
+-duman (master) asteroids $ git branch easy-mode
+-duman (master) asteroids $ git branch
+-  easy-mode
+-* master (yıldız işareti düzenlemenin master brach da olacağını belirtiyor)
+-duman (master) asteroids $ git checkout  easy-mode********** değiştime bu kodla oluyor
+-Switched to branch 'easy-mode'
+-duman (easy-mode) asteroids $ git branch
+-* easy-mode (yıldız easy mode olunca değişimler bu bölümde olacak)
+-  master
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
