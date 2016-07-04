@@ -1,0 +1,21 @@
+Önce gidip Github ta repz açıyoruz. Ardından git hub ve bizim aramızdaki repz olacak remote repz i için aşağıdaki kmutları giriyoruz
+
+duman (master *) reflections $ git remote (Elinde hangi remote olduğunu gösteriri şu an bış)
+duman (master *) reflections $ git remote add origin https://github.com/harpella/reflections.git
+duman (master *) reflections $ git remote (Elimizde origin adlı remote olduğunu gösteriyor )
+origin
+duman (master *) reflections $ git remote -v (to verify URL was added correctly We run this command )
+origin	https://github.com/harpella/reflections.git (fetch)
+origin	https://github.com/harpella/reflections.git (push)
+duman (master *) reflections $ git push origin master
+Username for 'https://github.com': harpella
+Password for 'https://harpella@github.com': 
+Counting objects: 24, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (24/24), done.
+Writing objects: 100% (24/24), 4.87 KiB | 0 bytes/s, done.
+Total 24 (delta 13), reused 0 (delta 0)
+To https://github.com/harpella/reflections.git
+ * [new branch]      master -> master
+duman (master *) reflections $ 
+
