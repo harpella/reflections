@@ -99,6 +99,18 @@ If a branch is deleted and leaves some commits unreachable from existing branche
 
 ***git gc
 
+----------
+
+git merge will also include the currently checked-out branch in the merged version. 
+So if you have branch1 checked out, and you run 
+
+git merge branch2 branch3
+
+Comparing a commit to its parent.
+
+***git show commit_id
+
+
 
 
 
