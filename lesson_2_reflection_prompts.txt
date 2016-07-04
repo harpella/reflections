@@ -110,6 +110,14 @@ Comparing a commit to its parent.
 
 ***git show commit_id
 
+----
+branch silmek için 
+git branch -d branch_name
+--------
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+
+
+
 
 
 
