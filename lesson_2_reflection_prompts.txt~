@@ -1,0 +1,146 @@
+
+Repozitory açmak 
+mesela "recipe" dosyası var ve içinde 3 adet text dosyası var. Rep. açmak için 
+
+duman recipe $ ls -a
+.  ..  cake.text  pasta.text  tart.text (git sodyası yanı Rep. açılmamış)
+
+git init komutu ile açabilirsin
+duman recipe $ git init
+Initialized empty Git repository in /home/duman/Desktop/recipe/.git/
+duman (master #) recipe $ ls -a
+.  ..  cake.text  .git  pasta.text  tart.text
+
+***git status komutu ile
+List which files are staged, unstaged, and untracked.
+----------------
+
+What happens when you initialize a repository? Why do you need to do it?
+
+How is the staging area different from the working directory and the repository?
+What value do you think it offers?
+
+How can you use the staging area to make sure you have one commit per logical
+change?
+
+What are some situations when branches would be helpful in keeping your history
+organized? How would branches help?
+
+How do the diagrams help you visualize the branch structure?
+
+What is the result of merging two branches together? Why do we represent it in
+the diagram the way we do?
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges
+manually?
+
+------
+Staging Area
+How is the staging area different from the working directory and the repository? What value do you think it offers?
+
+**git add something.exe komutu stage area ya dosya ekleyebilirsin
+stage area ya gelen dosyaları commit edebilirsin
+
+commit mesajı yazmak için 
+**git commit mesajı kullanılıyor
+-----
+bir program dosyasısını modfiye ettikten sonra stage etmemiz gerek tekrar dan
+-------
+** git diff (parametre olmadan) bu komut daha comit edilmemiş fakata çalışma alanıya repozotory arasındaki farkları gösterir. mesela 2 farklı dosyada değişiklik yaptık fakat " git add" yapmadık. Bu durumda değişiklik sadece çalışma alnında kalmış oluyor . Değişmemiş durum ise repozotory de. Böylelikle bu komutla durumları karşılaştırabiliyorsun 
+
+----------
+Staging area
+game.js yeniden değiştirlmiş ve git add ile eklenmiş fakat commit edilmemiş ve commit edilmmiş eski game.js ile fark yani ; Staging area ve REpozorty arasında farkı 
+**** "git diff --staged" ile bulabilirsin
+
+----
+git add olmamış çalışma alnında değiştirilmiş dosyaları eski haline gelmesi için 
+*** "git reset --hard" komutunu kullanabilirsin. Bunu kullanırken deikkatli olunmalı geri dönüşü yok
+
+How can you use the staging area to make sure you have one commit per logical change?
+------
+
+Bracnhes =Dal şube
+
+programı 3 ayrı kategorodi dallandarılabilirsin -
+
+** "git branch" = master mode (değişimleri easy mode ile yapılacak )
+
+   "git branch easy-mode" easy mode
+-* master
+-duman (master) asteroids $ git branch easy-mode
+-duman (master) asteroids $ git branch
+-  easy-mode
+-* master (yıldız işareti düzenlemenin master brach da olacağını belirtiyor)
+-duman (master) asteroids $ git checkout  easy-mode********** değiştime bu kodla oluyor
+-Switched to branch 'easy-mode'
+-duman (easy-mode) asteroids $ git branch
+-* easy-mode (yıldız easy mode olunca değişimler bu bölümde olacak)
+-  master
+-----------
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+------
+
+the visual representation of the commit history is 
+***"git log --graph --oneline master coins easy-mode" (üç şubeyinin commitlerini gösteren grafik)
+-------
+git checkout hd938ydh37y(commit no) detached head yaptıktan sonra . Buradan yeni bir branch açıp ilerlemek isternirse 
+
+"git checkout -b new_branch_name" bu kod aşağıdaki iki kodun toplamına eşittir.**Short cut
+
+
+**git branch new_branch_name
+**git checkout new_branch_name
+
+--------
+How do the diagrams help you visualize the branch structure?
+-------
+If a branch is deleted and leaves some commits unreachable from existing branches, those commits will continue to be accessible by commit id, until Git’s garbage collection runs. This will happen automatically from time to time, unless you actively turn it off. You can also run this process manually with 
+
+***git gc
+
+----------
+
+git merge will also include the currently checked-out branch in the merged version. 
+So if you have branch1 checked out, and you run 
+
+git merge branch2 branch3
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
