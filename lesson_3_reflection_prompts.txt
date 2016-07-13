@@ -24,3 +24,12 @@ duman (master *) reflections $
 ------
 Git hubdan yeni file yaratıp lokale yüklemek
 
+git push origin master
+git pull origin master
+
+------
+
+Why might you want to always pull changes manually rather than having Git automatically stay up-to-date with your remote repository?
+
+
+
