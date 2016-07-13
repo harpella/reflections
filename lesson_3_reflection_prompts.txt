@@ -31,5 +31,111 @@ git pull origin master
 
 Why might you want to always pull changes manually rather than having Git automatically stay up-to-date with your remote repository?
 
+--------
+Forking = Bir repozoriy bira değiştirip başka ad verip ama orginali refere tutmak.Github içinde direk yapabilmek bu işlemi
+
+-----
+Describe the differences between forks, clones, and branches. When would you use one instead of another?
+----------
+lokalde yaptığın ile githubda yani remote yaptığını updatler farklı ise ver merge etmek istiyorsan.İlk önce aşağıdakindeki 1. sıra kodu yazmalısın. Bu sana yeni remotetaki masterın bir kopyasını localdeki master ile merge edilmiş halini verecek
+
+1- duman (master) recipes $ git fetch origin
+ardından
+duman (master) recipes $ git log origin/master
+yada
+duman (master) recipes $ git diff origin/master master.
+
+Elinde hem origin/master branch olacak hem de master branch bulunmuş olacak
+-duman (master) recipes $ git status
+-On branch master
+-Your branch and 'origin/master' have diverged,
+-and have 1 and 1 different commit each, respectively.
+  (use "git pull" to merge the remote branch into yours)
+
+-nothing to commit, working directory clean
+--------
+ardından 
+merge local ile remote masterın merge inden çıkan origin/master ı local master ile bilrleştirmeye geliyor sıra
+
+ve bir conflict oluşuyor manuel olarak dosyayı açıp düzenleme yapılması gerek
+****
+duman (master) recipes $ git merge master origin/master
+Auto-merging chili-recipe.txt
+CONFLICT (content): Merge conflict in chili-recipe.txt
+Automatic merge failed; fix conflicts and then commit the result.
+
+git fetch origin +  git merge master origin/master = git pull origin master
+
+------
+
+ What is the benefit of having a copy of the last known state of the remote stored locally?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
