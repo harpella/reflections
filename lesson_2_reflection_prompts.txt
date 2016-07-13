@@ -3,7 +3,7 @@ Repozitory açmak
 mesela "recipe" dosyası var ve içinde 3 adet text dosyası var. Rep. açmak için 
 
 duman recipe $ ls -a
-.  ..  cake.text  pasta.text  tart.text (git sodyası yanı Rep. açılmamış)
+.  ..  cake.text  pasta.text  tart.text (git sodyası yok yanı Rep. açılmamış)
 
 git init komutu ile açabilirsin
 duman recipe $ git init
